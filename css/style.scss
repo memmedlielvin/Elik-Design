@@ -342,6 +342,7 @@ main {
 
 @media screen and (max-width: 480px) {
     main{
+        width: 100wh;
     
         .fa-bars{position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem;}
         .topcloseicon{position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; display: none;}
@@ -399,7 +400,7 @@ main {
 }}
         
         header {
-            width: 100%;
+            width: 100wh;
             padding: 1rem 0;
             text-align: center;
             border-bottom: 1px solid black;
@@ -437,7 +438,7 @@ main {
     }
     
     section {
-        width: 100%;
+        width: 100wh;
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
@@ -536,7 +537,7 @@ main {
     }   
     
     footer {
-        width: 100%;
+        width: 100wh;
         padding: 0 0.5rem;
         border-top: 1px solid black;
         margin-top: 7rem;
@@ -616,7 +617,7 @@ main {
         box-shadow: 0 0 10px grey;
         
         position: fixed;
-        
+
         bottom:0;
         right: 0;
     
