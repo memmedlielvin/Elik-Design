@@ -547,8 +547,8 @@ main {
     letter-spacing: 1px;
   }
   main #chatbutton {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -561,7 +561,7 @@ main {
   }
   main #chatbutton div {
     width: 50%;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
   }
   main #chatbutton div img {
     width: 100%;
@@ -571,18 +571,19 @@ main {
   main #chatbutton span {
     width: 50%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #ECECEC;
   }
   main #chatbox {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     font-size: 10px;
     border: 1px solid grey;
     box-shadow: 0 0 10px grey;
     position: fixed;
     bottom: 0;
     right: 0;
+    display: none;
   }
   main #chatbox div:nth-child(1) {
     width: 100%;
@@ -610,7 +611,7 @@ main {
   }
   main #chatbox div:nth-child(2) {
     width: 100%;
-    height: 80%;
+    height: 72.5%;
     background-color: #E9E9E9;
     overflow-y: scroll;
     padding: 10px;
