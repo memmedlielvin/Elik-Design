@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Elik Design & Company</title>
+</head>
+
+<body>
+
+    <main>
+
+       
+    <div id="navformobil">
+        <ul id="navformobilul">
+            <li>
+                <a href="#"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
+                   </a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Book Online</a></li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            
+        </ul>
+
+    </div>
+
+        <i class="fa-solid fa-bars" id="fa-bars" onClick="opennav();"></i>
+        <i class="fa-solid fa-xmark topcloseicon" id="topcloseicon" onClick="closenav();"></i>
+
+        <header>
+            <div><img src="img/indeximg/0.webp" alt="company-logo"></div>
+            <hr>
+            <h1><a href="#">Elik Design</a>
+
+            </h1>
+        </header>
+
+
+        <nav>
+            <ul id="navforpc">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Book Online</a></li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
+                       </a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+
+
+
+        <section>
+            <div>
+                <div><img src="img/indeximg/1.webp" alt=""></div>
+                <div>
+                    <h1>Minimal Design Maximum Impact</h1>
+                </div>
+                <div>
+                    <div><img src="img/indeximg/2.webp" alt=""></div>
+                    <div><img src="img/indeximg/3.webp" alt=""></div>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <h2>
+                        Interior Design Studio</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <a href="#">Read More >></a>
+                </div>
+                <div><img src="img/indeximg/4.webp" alt=""></div>
+                <div>
+                    <a href="mailto:memmedlielvin029@gmail.com">memmedlielvin029@gmail.com</a>
+                    <h2>1-800-000-0000</h2>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>&copy 2022 Elik Design created by Memmedli Elvin</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <div id="chatbutton" onclick="openchat();">
+            <div><img src="img/indeximg/0.webp" alt="logo"></div>
+            <span>Let's Chat!</span> 
+            
+        </div>
+
+
+
+        <div id="chatbox">
+
+        <div>
+            
+            <img src="img/indeximg/0.webp" alt="logo">
+                
+            
+            <span>Elik Design</span>
+                
+            
+            <i class="fa-solid fa-xmark" onclick="closechat();"></i>
+                
+        </div>
+        
+        <div id="result"></div>
+        <div>
+            <input type="text" id="chatinput" placeholder="Type your mesage"><i class="fa-solid fa-paper-plane" onClick="sendmessage();"></i></div>
+      </div>
+
+    </main>
+
+    
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function opennav(){
+
+    document.getElementById("navformobil").style.display="block";
+    document.getElementById("fa-bars").style.display="none";
+    document.getElementById("topcloseicon").style.display="block";
+    
+
+    
+
+}
+function closenav(){
+
+document.getElementById("navformobil").style.display="none";
+document.getElementById("fa-bars").style.display="block";
+document.getElementById("topcloseicon").style.display="none";
+
+
+}
+
+function openchat(){
+
+document.getElementById("chatbox").style.display="block";
+
+
+
+}
+
+
+function closechat(){
+
+document.getElementById("chatbox").style.display="none";
+
+
+
+}
+function sendmessage(){
+
+
+mesaginput=document.getElementById("chatinput").value;
+mesaginput=document.getElementById("result").innerHTML=mesaginput;
+
+
+
+
+
+}
+
+
+
+</script>
+</body>
+
+</html>
