@@ -361,6 +361,9 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   main #navformobil #navformobilul li:not(:first-child) {
     width: 40%;

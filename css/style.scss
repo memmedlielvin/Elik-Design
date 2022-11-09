@@ -360,6 +360,9 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    top:0; 
+    left: 0;
     li:not(:first-child){
         width: 40%;
         margin-bottom: 1rem;
