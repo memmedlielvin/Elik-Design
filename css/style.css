@@ -364,6 +364,8 @@ main {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
   }
   main #navformobil #navformobilul li:not(:first-child) {
     width: 40%;
@@ -584,8 +586,10 @@ main {
     border: 1px solid grey;
     box-shadow: 0 0 10px grey;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     right: 0;
+    bottom: 0;
     display: none;
   }
   main #chatbox div:nth-child(1) {
