@@ -70,7 +70,8 @@
             <div>
                 <div><img src="img/indeximg/1.webp" alt=""></div>
                 <div>
-                    <h1>Minimal Design Maximum Impact</h1>
+                    <h1>Minimal Design </h1>
+                    <h1>Maximum Impact</h1>
                 </div>
                 <div>
                     <div><img src="img/indeximg/2.webp" alt=""></div>
@@ -88,7 +89,7 @@
                 </div>
                 <div><img src="img/indeximg/4.webp" alt=""></div>
                 <div>
-                    <a href="mailto:memmedlielvin029@gmail.com">memmedlielvin029@gmail.com</a>
+                    <p><a href="mailto:memmedlielvindevop@gmail.com">memmedlielvindevop@gmail.com</a></p>
                     <h2>1-800-000-0000</h2>
                 </div>
 
@@ -120,22 +121,25 @@
 
         <div id="chatbox">
 
-        <div>
+        <div class="chat-box-head">
             
-            <img src="img/indeximg/0.webp" alt="logo">
+            <div ><img src="img/indeximg/0.webp" alt="logo"><span></span></div>
                 
             
-            <span>Elik Design</span>
+            <div>
+                <h6>Elik Design Firm</h6>
+                <p>We'll reply as soon as we can</p>
+            </div>
                 
             
             <i class="fa-solid fa-xmark" onclick="closechat();"></i>
                 
-        </div>
+        </div >
         
-        <div id="result"></div>
-        <div>
+        <div class="chat-box-body"></div>
+        <div class="chat-box-footer">
             <input type="text" id="chatinput" placeholder="Type your mesage"><i class="fa-solid fa-paper-plane" onClick="sendmessage();"></i></div>
-      </div>
+        </div>
 
     </main>
 
@@ -159,7 +163,9 @@
 
 function opennav(){
 
+    
     document.getElementById("navformobil").style.display="block";
+    
     document.getElementById("fa-bars").style.display="none";
     document.getElementById("topcloseicon").style.display="block";
     
