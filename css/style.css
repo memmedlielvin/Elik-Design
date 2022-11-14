@@ -622,6 +622,7 @@ main {
     left: 0;
     z-index: 3;
     display: none;
+    overflow: hidden;
   }
   main #chatbox .chat-box-head {
     width: 100%;
@@ -676,7 +677,6 @@ main {
     height: 70vh;
     overflow: auto;
     word-wrap: break-word;
-    overflow: hidden;
     background-color: #e9e9e9;
     overflow-y: auto;
     padding: 20px;
