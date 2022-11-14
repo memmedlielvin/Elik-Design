@@ -353,8 +353,6 @@ main {
   }
   main #navformobil {
     width: 100%;
-    display: none;
-    transition: "all 2s ease";
   }
   main #navformobil #navformobilul {
     width: 100%;
