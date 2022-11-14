@@ -15,8 +15,8 @@
     <main>
 
        
-    <div id="navformobil">
-        <ul id="navformobilul">
+    
+        <ul id="navformobil">
             <li>
                 <a href="#"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
                    </a>
@@ -31,7 +31,7 @@
             
         </ul>
 
-    </div>
+    
 
         <i class="fa-solid fa-bars" id="fa-bars" onClick="opennav();"></i>
         <i class="fa-solid fa-xmark topcloseicon" id="topcloseicon" onClick="closenav();"></i>
@@ -171,9 +171,9 @@
 function opennav(){
 
     
-    document.getElementById("navformobil").style.transition="all 1s ease";
-    document.getElementById("navformobilul").style.width="100%";
-    document.getElementById("navformobilul").style.height="100vh";
+    document.getElementById("navformobil").style.transition="all 0.5s ease";
+    document.getElementById("navformobil").style.right="0";
+    
     
     document.getElementById("fa-bars").style.display="none";
     document.getElementById("topcloseicon").style.display="block";
@@ -184,7 +184,8 @@ function opennav(){
 }
 function closenav(){
 
-document.getElementById("navformobil").style.display="none";
+    document.getElementById("navformobil").style.transition="all 0.5s ease";
+    document.getElementById("navformobil").style.right="-100%";
 document.getElementById("fa-bars").style.display="block";
 document.getElementById("topcloseicon").style.display="none";
 
@@ -192,8 +193,8 @@ document.getElementById("topcloseicon").style.display="none";
 }
 
 function openchat(){
-
-document.getElementById("chatbox").style.display="block";
+    document.getElementById("chatbox").style.transition="all 0.5s ease";
+    document.getElementById("chatbox").style.bottom="0";
 document.querySelector("main").style.display="none";
 
 
@@ -203,7 +204,8 @@ document.querySelector("main").style.display="none";
 
 function closechat(){
 
-document.getElementById("chatbox").style.display="none";
+    document.getElementById("chatbox").style.transition="all 0.5s ease";
+    document.getElementById("chatbox").style.bottom="-100%";
 document.querySelector("main").style.display="block";
 
 
