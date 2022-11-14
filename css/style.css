@@ -614,7 +614,7 @@ main {
     box-shadow: 0 0 10px grey;
     position: fixed;
     right: 0;
-    bottom: -100%;
+    bottom: -100vh;
     z-index: 3;
   }
   #chatbox .chat-box-head {
