@@ -583,7 +583,7 @@ main {
     font-size: 1rem;
     letter-spacing: 1px;
   }
-  main #chatbutton {
+  #chatbutton {
     width: 55px;
     height: 55px;
     display: flex;
@@ -596,22 +596,22 @@ main {
     bottom: 20px;
     right: 10px;
   }
-  main #chatbutton div {
+  #chatbutton div {
     width: 50%;
     margin-right: 3px;
   }
-  main #chatbutton div img {
+  #chatbutton div img {
     width: 100%;
     border-radius: 50%;
     background-color: white;
   }
-  main #chatbutton span {
+  #chatbutton span {
     width: 50%;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 0.5rem;
     color: #ececec;
   }
-  main #chatbox {
+  #chatbox {
     width: 100%;
     height: 100vh;
     font-size: 10px;
@@ -625,7 +625,7 @@ main {
     z-index: 3;
     display: none;
   }
-  main #chatbox .chat-box-head {
+  #chatbox .chat-box-head {
     width: 100%;
     height: 14vh;
     background-color: #242424;
@@ -634,19 +634,19 @@ main {
     align-items: center;
     padding: 1rem 1rem;
   }
-  main #chatbox .chat-box-head > div:nth-child(1) {
+  #chatbox .chat-box-head > div:nth-child(1) {
     width: 50px;
     height: 50px;
     position: relative;
   }
-  main #chatbox .chat-box-head > div:nth-child(1) img {
+  #chatbox .chat-box-head > div:nth-child(1) img {
     width: 100%;
     height: 100%;
     padding: 0.5rem;
     border-radius: 50%;
     background-color: white;
   }
-  main #chatbox .chat-box-head > div:nth-child(1) span {
+  #chatbox .chat-box-head > div:nth-child(1) span {
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -657,23 +657,23 @@ main {
     bottom: 2px;
     right: 1.5px;
   }
-  main #chatbox .chat-box-head > div:nth-child(2) h6 {
+  #chatbox .chat-box-head > div:nth-child(2) h6 {
     font-size: 1rem;
     color: #dadada;
   }
-  main #chatbox .chat-box-head > div:nth-child(2) p {
+  #chatbox .chat-box-head > div:nth-child(2) p {
     font-size: 14px;
     color: #cfcfcf;
     margin-top: 5px;
   }
-  main #chatbox .chat-box-head .fa-xmark {
+  #chatbox .chat-box-head .fa-xmark {
     color: black;
     padding: 5px 7px;
     font-size: 1rem;
     cursor: pointer;
     background-color: white;
   }
-  main #chatbox .chat-box-body {
+  #chatbox .chat-box-body {
     max-width: 100%;
     height: 70vh;
     overflow: auto;
@@ -685,7 +685,7 @@ main {
     font-size: 1rem;
     color: grey;
   }
-  main #chatbox .chat-box-footer {
+  #chatbox .chat-box-footer {
     width: 100%;
     height: 8vh;
     position: relative;
@@ -694,19 +694,19 @@ main {
     align-items: center;
     background-color: white;
   }
-  main #chatbox .chat-box-footer #smile-text-input {
+  #chatbox .chat-box-footer #smile-text-input {
     display: flex;
     align-items: center;
     width: 80%;
   }
-  main #chatbox .chat-box-footer #smile-text-input .fa-face-smile {
+  #chatbox .chat-box-footer #smile-text-input .fa-face-smile {
     color: rgb(27, 27, 27);
     font-size: 1.3rem;
     color: rgb(82, 82, 82);
     padding: 5px;
     cursor: pointer;
   }
-  main #chatbox .chat-box-footer #smile-text-input #text-input {
+  #chatbox .chat-box-footer #smile-text-input #text-input {
     width: 100%;
     height: 40px;
     padding: 15px 5px;
@@ -715,51 +715,51 @@ main {
     font-size: 1rem;
     word-wrap: break-word;
   }
-  main #chatbox .chat-box-footer #smile-text-input #text-input::-moz-placeholder {
+  #chatbox .chat-box-footer #smile-text-input #text-input::-moz-placeholder {
     color: grey;
   }
-  main #chatbox .chat-box-footer #smile-text-input #text-input:-ms-input-placeholder {
+  #chatbox .chat-box-footer #smile-text-input #text-input:-ms-input-placeholder {
     color: grey;
   }
-  main #chatbox .chat-box-footer #smile-text-input #text-input::placeholder {
+  #chatbox .chat-box-footer #smile-text-input #text-input::placeholder {
     color: grey;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input {
+  #chatbox .chat-box-footer #scripka-camera-input {
     display: flex;
     align-items: center;
     display: flex;
     width: 20%;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span {
+  #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span {
     display: inline-block;
     position: relative;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span #file-scripka {
+  #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span #file-scripka {
     opacity: 0;
     width: 100%;
     position: absolute;
     width: 100%;
     text-align: center;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span img {
+  #chatbox .chat-box-footer #scripka-camera-input #file-scripka-span img {
     width: 80%;
     cursor: pointer;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-camera-span {
+  #chatbox .chat-box-footer #scripka-camera-input #file-camera-span {
     display: inline-block;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-camera-span #file-camera {
+  #chatbox .chat-box-footer #scripka-camera-input #file-camera-span #file-camera {
     opacity: 0;
     width: 100%;
     position: absolute;
     width: 100%;
     text-align: center;
   }
-  main #chatbox .chat-box-footer #scripka-camera-input #file-camera-span img {
+  #chatbox .chat-box-footer #scripka-camera-input #file-camera-span img {
     width: 80%;
     cursor: pointer;
   }
-  main #chatbox .chat-box-footer .send-message-icon {
+  #chatbox .chat-box-footer .send-message-icon {
     display: none;
     position: absolute;
     width: 35px;

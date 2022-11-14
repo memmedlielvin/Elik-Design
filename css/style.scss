@@ -605,207 +605,207 @@ main {
         }
       }
     }
+  }
 
-    #chatbutton {
-      width: 55px;
-      height: 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  #chatbutton {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    border-radius: 50%;
+    padding: 0 0.3rem;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+
+    div {
+      width: 50%;
+      margin-right: 3px;
+      img {
+        width: 100%;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+    span {
+      width: 50%;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 0.5rem;
+      color: #ececec;
+    }
+  }
+
+  #chatbox {
+    width: 100%;
+    height: 100vh;
+
+    font-size: 10px;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px grey;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+
+    .chat-box-head {
+      width: 100%;
+      height: 14vh;
       background-color: #242424;
-      border-radius: 50%;
-      padding: 0 0.3rem;
-      position: fixed;
-      bottom: 20px;
-      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1rem;
 
-      div {
-        width: 50%;
-        margin-right: 3px;
+      & > div:nth-child(1) {
+        width: 50px;
+        height: 50px;
+        position: relative;
+
         img {
           width: 100%;
+          height: 100%;
+          padding: 0.5rem;
+
           border-radius: 50%;
           background-color: white;
         }
+        span {
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          background-color: #43b72a;
+          border: 2px solid #242424;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 2px;
+          right: 1.5px;
+        }
       }
-      span {
-        width: 50%;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 0.5rem;
-        color: #ececec;
+
+      & > div:nth-child(2) {
+        h6 {
+          font-size: 1rem;
+          color: #dadada;
+        }
+        p {
+          font-size: 14px;
+          color: #cfcfcf;
+          margin-top: 5px;
+        }
+      }
+
+      .fa-xmark {
+        color: black;
+        padding: 5px 7px;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: white;
       }
     }
 
-    #chatbox {
+    .chat-box-body {
+      max-width: 100%;
+      height: 70vh;
+      overflow: auto;
+      word-wrap: break-word;
+
+      background-color: #e9e9e9;
+      overflow-y: auto;
+      padding: 20px;
+      text-overflow: clip;
+
+      font-size: 1rem;
+      color: grey;
+    }
+
+    .chat-box-footer {
       width: 100%;
-      height: 100vh;
+      height: 8vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
 
-      font-size: 10px;
-      border: 1px solid grey;
-      box-shadow: 0 0 10px grey;
-
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: none;
-
-      .chat-box-head {
-        width: 100%;
-        height: 14vh;
-        background-color: #242424;
+      #smile-text-input {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 1rem 1rem;
+        width: 80%;
 
-        & > div:nth-child(1) {
-          width: 50px;
-          height: 50px;
-          position: relative;
+        .fa-face-smile {
+          color: rgb(27, 27, 27);
+          font-size: 1.3rem;
+          color: rgb(82, 82, 82);
+          padding: 5px;
 
-          img {
-            width: 100%;
-            height: 100%;
-            padding: 0.5rem;
-
-            border-radius: 50%;
-            background-color: white;
-          }
-          span {
-            width: 12px;
-            height: 12px;
-            display: inline-block;
-            background-color: #43b72a;
-            border: 2px solid #242424;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 2px;
-            right: 1.5px;
-          }
-        }
-
-        & > div:nth-child(2) {
-          h6 {
-            font-size: 1rem;
-            color: #dadada;
-          }
-          p {
-            font-size: 14px;
-            color: #cfcfcf;
-            margin-top: 5px;
-          }
-        }
-
-        .fa-xmark {
-          color: black;
-          padding: 5px 7px;
-          font-size: 1rem;
           cursor: pointer;
-          background-color: white;
+        }
+
+        #text-input {
+          width: 100%;
+          height: 40px;
+          padding: 15px 5px;
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          word-wrap: break-word;
+          &::placeholder {
+            color: grey;
+          }
         }
       }
-
-      .chat-box-body {
-        max-width: 100%;
-        height: 70vh;
-        overflow: auto;
-        word-wrap: break-word;
-
-        background-color: #e9e9e9;
-        overflow-y: auto;
-        padding: 20px;
-        text-overflow: clip;
-
-        font-size: 1rem;
-        color: grey;
-      }
-
-      .chat-box-footer {
-        width: 100%;
-        height: 8vh;
-        position: relative;
+      #scripka-camera-input {
         display: flex;
-        justify-content: center;
         align-items: center;
-        background-color: white;
 
-        #smile-text-input {
-          display: flex;
-          align-items: center;
-          width: 80%;
-
-          .fa-face-smile {
-            color: rgb(27, 27, 27);
-            font-size: 1.3rem;
-            color: rgb(82, 82, 82);
-            padding: 5px;
-
+        display: flex;
+        width: 20%;
+        #file-scripka-span {
+          display: inline-block;
+          position: relative;
+          #file-scripka {
+            opacity: 0;
+            width: 100%;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+          }
+          img {
+            width: 80%;
             cursor: pointer;
           }
+        }
 
-          #text-input {
+        #file-camera-span {
+          display: inline-block;
+          #file-camera {
+            opacity: 0;
             width: 100%;
-            height: 40px;
-            padding: 15px 5px;
-            border: none;
-            outline: none;
-            font-size: 1rem;
-            word-wrap: break-word;
-            &::placeholder {
-              color: grey;
-            }
+            position: absolute;
+            width: 100%;
+            text-align: center;
+          }
+          img {
+            width: 80%;
+            cursor: pointer;
           }
         }
-        #scripka-camera-input {
-          display: flex;
-          align-items: center;
+      }
 
-          display: flex;
-          width: 20%;
-          #file-scripka-span {
-            display: inline-block;
-            position: relative;
-            #file-scripka {
-              opacity: 0;
-              width: 100%;
-              position: absolute;
-              width: 100%;
-              text-align: center;
-            }
-            img {
-              width: 80%;
-              cursor: pointer;
-            }
-          }
-
-          #file-camera-span {
-            display: inline-block;
-            #file-camera {
-              opacity: 0;
-              width: 100%;
-              position: absolute;
-              width: 100%;
-              text-align: center;
-            }
-            img {
-              width: 80%;
-              cursor: pointer;
-            }
-          }
-        }
-
-        .send-message-icon {
-          display: none;
-          position: absolute;
-          width: 35px;
-          height: 35px;
-          top: 5px;
-          right: 5px;
-          opacity: 0.8;
-        }
+      .send-message-icon {
+        display: none;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 5px;
+        right: 5px;
+        opacity: 0.8;
       }
     }
   }
