@@ -612,7 +612,7 @@ main {
     font-size: 10px;
     position: fixed;
     right: 0;
-    bottom: -100%;
+    bottom: -100vh;
     z-index: 3;
   }
   #chatbox .chat-box-head {
