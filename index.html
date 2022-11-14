@@ -137,26 +137,31 @@
         </div >
         
         <div class="chat-box-body"></div>
+        
+        
+        
         <div class="chat-box-footer">
-            <input type="text" id="chatinput" placeholder="Type your mesage"><i class="fa-solid fa-paper-plane" onClick="sendmessage();"></i></div>
+            <div id="smile-text-input">
+                <i class="fa-regular fa-face-smile"></i>
+                <input type="text"  id= "text-input" placeholder="Type your mesage" onfocus="inputFocus();">
+            </div>
+            <div id="scripka-camera-input">
+                
+                <span id="file-scripka-span"><input id="file-scripka" type="file" name="file" ><img id="file-scripka-img" 
+                    src="icon/attach-file.png" alt="attach-file"></span>
+                
+               <span id="file-camera-span"><input  id="file-camera" type="file" name="file" ><img id="file-camera-img" src="icon/camera-file.png" alt="camera-file"></span> 
+                
+               
+            </div>
+
+            <img class="send-message-icon" src="icon/send-message-icon.png" alt="send-message-icon" onClick="sendmessage(); ">
         </div>
+        
+    
+    </div>
 
     </main>
-
-    
-
-
-
-      
-
-
-
-
-
-
-
-
-
 
 
 <script>
@@ -198,17 +203,30 @@ document.getElementById("chatbox").style.display="none";
 
 
 }
+
+
+ function inputFocus(){
+
+    
+    document.querySelector(".send-message-icon").style.display="block";
+
+    document.querySelector("#file-camera-img ").style.display="none";
+    document.querySelector("#file-scripka-img ").style.display="none";
+    
+
+
+ }
+
+
 function sendmessage(){
 
-
-mesaginput=document.getElementById("chatinput").value;
-mesaginput=document.getElementById("result").innerHTML=mesaginput;
-
-
-
-
+mesaginput=document.querySelector("#text-input").value;
+document.querySelector(".chat-box-body").innerHTML=mesaginput;
+mesaginput=0;
 
 }
+
+
 
 
 

@@ -651,6 +651,7 @@ main {
 
       .chat-box-head {
         width: 100%;
+        height: 14vh;
         background-color: #242424;
         display: flex;
         justify-content: space-between;
@@ -705,38 +706,102 @@ main {
       }
 
       .chat-box-body {
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: 78vh;
+        overflow: auto;
+        word-wrap: break-word;
 
         background-color: #e9e9e9;
         overflow-y: auto;
-        padding: 10px;
+        padding: 20px;
+        text-overflow: clip;
 
-        font-size: 2rem;
+        font-size: 1rem;
         color: grey;
       }
 
       .chat-box-footer {
         width: 100%;
+        height: 8vh;
         position: relative;
-        input {
-          width: 100%;
-          height: 50px;
-          outline: none;
-          border: none;
-          padding: 5px 20px;
-          &::placeholder {
-            font-size: 1.5rem;
-            color: silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        #smile-text-input {
+          display: flex;
+          align-items: center;
+          width: 80%;
+
+          .fa-face-smile {
+            color: rgb(27, 27, 27);
+            font-size: 1.3rem;
+            color: rgb(82, 82, 82);
+            padding: 5px;
+
+            cursor: pointer;
+          }
+
+          #text-input {
+            width: 100%;
+            height: 40px;
+            padding: 15px 5px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            word-wrap: break-word;
+            &::placeholder {
+              color: grey;
+            }
           }
         }
-        i {
-          color: rgb(27, 27, 27);
+        #scripka-camera-input {
+          display: flex;
+          align-items: center;
+
+          display: flex;
+          width: 20%;
+          #file-scripka-span {
+            display: inline-block;
+            position: relative;
+            #file-scripka {
+              opacity: 0;
+              width: 100%;
+              position: absolute;
+              width: 100%;
+              text-align: center;
+            }
+            img {
+              width: 80%;
+              cursor: pointer;
+            }
+          }
+
+          #file-camera-span {
+            display: inline-block;
+            #file-camera {
+              opacity: 0;
+              width: 100%;
+              position: absolute;
+              width: 100%;
+              text-align: center;
+            }
+            img {
+              width: 80%;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .send-message-icon {
+          display: none;
           position: absolute;
-          font-size: 2rem;
-          bottom: 15px;
-          right: 30px;
-          cursor: pointer;
+          width: 35px;
+          height: 35px;
+          top: 5px;
+          right: 5px;
+          opacity: 0.8;
         }
       }
     }
