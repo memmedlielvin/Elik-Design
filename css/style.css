@@ -580,7 +580,7 @@ main {
     padding: 0 0.2rem;
   }
   main footer > div div:last-child p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 1px;
   }
   main #chatbutton {
@@ -621,6 +621,7 @@ main {
     top: 0;
     left: 0;
     z-index: 3;
+    display: none;
   }
   main #chatbox .chat-box-head {
     width: 100%;

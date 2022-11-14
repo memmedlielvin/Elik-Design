@@ -598,7 +598,7 @@ main {
           padding: 0 0.2rem;
 
           p {
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             letter-spacing: 1px;
           }
@@ -648,6 +648,7 @@ main {
       top: 0;
       left: 0;
       z-index: 3;
+      display: none;
 
       .chat-box-head {
         width: 100%;
