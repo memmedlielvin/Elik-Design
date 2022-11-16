@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Elik Design</title>
+</head>
+<body>
+
+    <main>
+
+       
+    
+        <ul id="navformobil">
+            <li>
+                <a href="#"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
+                   </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            
+        </ul>
+
+    
+
+        <i class="fa-solid fa-bars" id="fa-bars" onClick="opennav();"></i>
+        <i class="fa-solid fa-xmark topcloseicon" id="topcloseicon" onClick="closenav();"></i>
+
+        <header>
+            <div><img src="img/indeximg/0.webp" alt="company-logo"></div>
+            <hr>
+            <h1><a href="index.html">Elik Design</a>
+
+            </h1>
+        </header>
+
+
+        <nav>
+            <ul id="navforpc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
+                       </a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+       <section id="section-map">
+        <h1>Contact</h1>
+        <div id="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136976.84515076!2d-96.1604664375!3d36.4993503652195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1668612157253!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+        
+
+<section id="section-contac-us">
+    
+    <div class="form-container"> 
+     <p>Send us a message, and we will contact you to arrange a free consultation</p>
+     <form action="#" method="post" autocomplete="off">
+         <div>
+             <input type="text" name="name" id="name" placeholder="Name" required>
+             <input type="email" name="email" id="Email" placeholder="Email" required>
+             <input type="tel" name="tel" id="Phone" placeholder="Phone" required>
+         </div>
+         <div>
+             <textarea name="about" id="textarea" placeholder="Type your message here"></textarea>
+             <input type="submit" value="Submit">
+
+         </div>
+
+     </form>
+    </div>
+    
+        <div class="adress-container">
+
+            <p>500 Terry Francois Street</p>
+            <p>San Francisco, CA 94158</p>
+            <p>Fax 123-456-7890</p>
+            <p><a href="tel:+994554576162">+994554576162</a></p>
+           <p> <a href="mailto:memmedlielvindevop@gmail.com">info@elikdesign.com</a></p>
+        </div>
+        
+ 
+ </section>
+
+       
+
+
+
+
+
+
+
+
+        <footer>
+            <div>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>&copy 2022 created by Memmedli Elvin</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+        
+
+
+
+       
+
+    </main>
+    <div id="chatbutton" onClick="openchat();">
+        <div><img src="img/indeximg/0.webp" alt="logo"></div>
+        <span>Let's Chat!</span> 
+        
+    </div>
+
+    <div id="chatbox">
+
+        <div class="chat-box-head">
+            
+            <div ><img src="img/indeximg/0.webp" alt="logo"><span></span></div>
+                
+            
+            <div>
+                <h6>Elik Design Firm</h6>
+                <p>We'll reply as soon as we can</p>
+            </div>
+                
+            
+            <i class="fa-solid fa-xmark" onclick="closechat();"></i>
+                
+        </div >
+        
+        <div class="chat-box-body"></div>
+        
+        
+        
+        <div class="chat-box-footer">
+            <div id="smile-text-input">
+                <i class="fa-regular fa-face-smile"></i>
+                <input type="text"  id= "text-input" placeholder="Type your mesage" onfocus="inputFocus();" >
+            </div>
+            <div id="scripka-camera-input">
+                
+                <span id="file-scripka-span"><input id="file-scripka" type="file" name="file" ><img id="file-scripka-img" 
+                    src="icon/attach-file.png" alt="attach-file"></span>
+                
+               <span id="file-camera-span"><input  id="file-camera" type="file" name="file" ><img id="file-camera-img" src="icon/camera-file.png" alt="camera-file"></span> 
+                
+               
+            </div>
+
+            <img class="send-message-icon" src="icon/send-message-icon.png" alt="send-message-icon" onClick="sendmessage(); ">
+        </div>
+        
+    
+    </div>
+
+<script>
+
+function opennav(){
+
+    
+    document.getElementById("navformobil").style.transition="all 0.5s ease";
+    document.getElementById("navformobil").style.right="0";
+    
+    
+    document.getElementById("fa-bars").style.display="none";
+    document.getElementById("topcloseicon").style.display="block";
+    
+
+    
+
+}
+function closenav(){
+
+    document.getElementById("navformobil").style.transition="all 0.5s ease";
+    document.getElementById("navformobil").style.right="-100%";
+document.getElementById("fa-bars").style.display="block";
+document.getElementById("topcloseicon").style.display="none";
+
+
+}
+
+function openchat(){
+    document.getElementById("chatbox").style.transition="all 0.5s ease";
+    document.getElementById("chatbox").style.bottom="0";
+
+
+
+
+}
+
+
+function closechat(){
+
+    document.getElementById("chatbox").style.transition="all 0.5s ease";
+    document.getElementById("chatbox").style.bottom="-100%";
+   
+
+
+
+
+}
+
+
+ function inputFocus(){
+
+    
+    document.querySelector(".send-message-icon").style.display="block";
+
+    document.querySelector("#file-camera-img ").style.display="none";
+    document.querySelector("#file-scripka-img ").style.display="none";
+
+   
+    
+
+
+ }
+
+
+
+
+function sendmessage(){
+
+mesaginput=document.querySelector("#text-input").value;
+document.querySelector(".chat-box-body").innerHTML=mesaginput;
+mesaginput=0;
+
+}
+
+
+
+
+
+</script>
+</body>
+
+</html>
