@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="js/main.js" content="text/js"></script>
     <title>Elik Design</title>
 </head>
+
 <body>
 
     <main>
@@ -22,9 +23,10 @@
                    </a>
             </li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="galery.html">Galery</a></li>
             <li><a href="services.html">Services</a></li>
+            
             <li>
                 <a href="contact.html">Contact</a>
             </li>
@@ -63,53 +65,55 @@
            
         </nav>
 
+        <section >
+            
 
-<section>
-    <h1>Services</h1>
-    <div>
+            <form action="formdata/formdata.txt" method="post" autocomplete="off" enctype="multipart/form-data">
+            
+                <div class="login"><a href="login.html"><i class="fa-solid fa-circle-user"></i><span> Log In</span>
+                </a></div>
+               
+                <div class="username">
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" placeholder="Username"> 
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                
+                <div class="password">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Password"> 
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
 
-        <div>
-            <img src="img/services/servicesimg1.webp" alt="img">
-            <h2>Residential Design</h2>
-            <p>1 hr</p>
-            <p>Consultation Meeting</p>
-            <a href="#">Let's Talk</a>
+                <div class="checkbox">
+                    <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox"><span>Remember me</span></label>
+                    <p><a href="#">Forgot Password</a></p>
+                </div>
+               
+                <div class="submit"><input type="submit" name="submit" id="password" value="Log In"> </div>
+                
+                <div class="or"><p>Or Login with</p></div>
+                
+                    <div class="google"><a href="https://www.google.com"><img src="img/login/google-icon.png" alt="google">
+                       Continue with Google</a></div>
 
-
-        </div>
-        <div>
-            <img src="img/services/servicesimg2.webp" alt="img">
-            <h2>Workspace Design</h2>
-            <p>1 hr</p>
-            <p>Consultation Meeting</p>
-            <a href="#">Let's Talk</a>
-
-
-        </div>
-        <div>
-            <img src="img/services/servicesimg3.webp" alt="img">
-            <h2>Interior Design</h2>
-            <p>1 hr</p>
-            <p>Consultation Meeting</p>
-            <a href="#">Let's Talk</a>
-
-
-        </div>
-
-
-
-
-
-
-
-    </div>
-    
-    
-
-    </section>
+            
+                
+            
 
 
-        
+
+
+            </form>
+
+
+        </section>
+
+
+
+       
 
         <footer>
             <div>

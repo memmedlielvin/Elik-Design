@@ -1,0 +1,453 @@
+@import "head-foot.scss";
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 100%;
+    section {
+      width: 60%;
+      margin: 0 auto;
+      padding: 3rem 0;
+      background-color: rgba(37, 37, 37, 0.8);
+
+      form {
+        width: 50%;
+        margin: auto;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+          width: 100%;
+          margin: auto;
+          margin-top: 1rem;
+        }
+
+        .login {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              font-size: 3rem;
+              margin-right: 10px;
+              color: #ffe30f;
+            }
+            span {
+              display: inline-block;
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: #ffe30f;
+            }
+          }
+        }
+        .username,
+        .password {
+          position: relative;
+          label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffe30f;
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            padding: 20px 50px;
+            margin-top: 10px;
+            outline: none;
+          }
+          .fa-user,
+          .fa-unlock-keyhole {
+            font-size: 1.2rem;
+            position: absolute;
+            top: 55%;
+            left: 5%;
+          }
+          .fa-eye,
+          .fa-eye-slash {
+            font-size: 1.2rem;
+            position: absolute;
+            top: 58%;
+            right: 5%;
+            display: none;
+          }
+        }
+
+        .checkbox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          label {
+            color: white;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            input {
+              margin-right: 5px;
+
+              &:checked + span {
+                color: #ffe30f;
+              }
+            }
+          }
+          p {
+            a {
+              font-size: 0.9rem;
+              letter-spacing: 1px;
+              color: #ffe30f;
+            }
+          }
+        }
+        .submit {
+          input {
+            width: 100%;
+            height: 40px;
+            font-size: 1.2rem;
+            background-color: #ffe30f;
+            border: none;
+            transition: all 0.6s;
+            &:hover {
+              cursor: pointer;
+              background-color: #807104;
+              border: 1px solid #ffe30f;
+              color: #ffe30f;
+            }
+          }
+        }
+        .or {
+          text-align: center;
+          color: white;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+        }
+        .google {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          border: 1px solid black;
+          background-color: silver;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: black;
+            img {
+              width: 30px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  main {
+    width: 100%;
+    section {
+      width: 70%;
+      margin: 1rem auto;
+      padding: 1rem 0;
+      background-color: rgba(37, 37, 37, 0.8);
+
+      form {
+        width: 100%;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+          width: 100%;
+          margin: auto;
+          margin-top: 1rem;
+        }
+
+        .login {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              font-size: 2rem;
+              margin-right: 10px;
+              color: #ffe30f;
+            }
+            span {
+              display: inline-block;
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #ffe30f;
+            }
+          }
+        }
+        .username,
+        .password {
+          position: relative;
+          label {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffe30f;
+          }
+          input {
+            width: 100%;
+            height: 30px;
+            padding: 15px 40px;
+            margin-top: 10px;
+            outline: none;
+          }
+          .fa-user,
+          .fa-unlock-keyhole {
+            font-size: 1rem;
+            position: absolute;
+            top: 60%;
+            left: 5%;
+          }
+          .fa-eye,
+          .fa-eye-slash {
+            font-size: 1rem;
+            position: absolute;
+            top: 60%;
+            right: 5%;
+            display: none;
+          }
+        }
+
+        .checkbox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          label {
+            color: white;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            input {
+              margin-right: 5px;
+
+              &:checked + span {
+                color: #ffe30f;
+              }
+            }
+          }
+          p {
+            a {
+              font-size: 0.8rem;
+              letter-spacing: 1px;
+              color: #ffe30f;
+            }
+          }
+        }
+        .submit {
+          input {
+            width: 100%;
+            height: 30px;
+            font-size: 1rem;
+            background-color: #ffe30f;
+            border: none;
+            transition: all 0.6s;
+            &:hover {
+              cursor: pointer;
+              background-color: #807104;
+              border: 1px solid #ffe30f;
+              color: #ffe30f;
+            }
+          }
+        }
+        .or {
+          text-align: center;
+          color: white;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+        }
+        .google {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 35px;
+
+          border: 1px solid black;
+          background-color: silver;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: black;
+            img {
+              width: 20px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+    section {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem 0;
+      background-color: rgba(37, 37, 37, 0.8);
+
+      form {
+        width: 100%;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+          width: 100%;
+          margin: auto;
+          margin-top: 1rem;
+        }
+
+        .login {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              font-size: 2rem;
+              margin-right: 10px;
+              color: #ffe30f;
+            }
+            span {
+              display: inline-block;
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #ffe30f;
+            }
+          }
+        }
+        .username,
+        .password {
+          position: relative;
+          label {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffe30f;
+          }
+          input {
+            width: 100%;
+            height: 30px;
+            padding: 15px 40px;
+            margin-top: 10px;
+            outline: none;
+          }
+          .fa-user,
+          .fa-unlock-keyhole {
+            font-size: 1rem;
+            position: absolute;
+            top: 60%;
+            left: 5%;
+          }
+          .fa-eye,
+          .fa-eye-slash {
+            font-size: 1rem;
+            position: absolute;
+            top: 60%;
+            right: 5%;
+            display: none;
+          }
+        }
+
+        .checkbox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          label {
+            color: white;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            input {
+              margin-right: 5px;
+
+              &:checked + span {
+                color: #ffe30f;
+              }
+            }
+          }
+          p {
+            a {
+              font-size: 0.8rem;
+              letter-spacing: 1px;
+              color: #ffe30f;
+            }
+          }
+        }
+        .submit {
+          input {
+            width: 100%;
+            height: 30px;
+            font-size: 1rem;
+            background-color: #ffe30f;
+            border: none;
+            transition: all 0.6s;
+            &:hover {
+              cursor: pointer;
+              background-color: #807104;
+              border: 1px solid #ffe30f;
+              color: #ffe30f;
+            }
+          }
+        }
+        .or {
+          text-align: center;
+          color: white;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+        }
+        .google {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 35px;
+
+          border: 1px solid black;
+          background-color: silver;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: black;
+            img {
+              width: 20px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
