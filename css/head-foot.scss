@@ -167,7 +167,8 @@
     position: fixed;
 
     right: 0;
-    bottom: -450px;
+    bottom: 0;
+    display: none;
 
     z-index: 3;
     box-shadow: -4px 0 10px rgb(71, 71, 71);
@@ -515,7 +516,8 @@
     position: fixed;
 
     right: 0;
-    bottom: -70vh;
+    bottom: 0;
+    display: none;
 
     z-index: 3;
     box-shadow: -4px -4px 10px rgb(71, 71, 71);
@@ -862,7 +864,7 @@
 
     position: fixed;
 
-    top: 0;
+    bottom: 0;
     left: 0;
     display: none;
 
