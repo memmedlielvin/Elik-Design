@@ -862,8 +862,9 @@
 
     position: fixed;
 
-    right: 0;
-    bottom: -100vh;
+    top: 0;
+    left: 0;
+    display: none;
 
     z-index: 3;
 

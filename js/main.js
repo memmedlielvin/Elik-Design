@@ -14,12 +14,12 @@ function closenav() {
 
 function openchat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
-  document.getElementById("chatbox").style.bottom = "0";
+  document.getElementById("chatbox").style.display = "block";
 }
 
 function closechat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
-  document.getElementById("chatbox").style.bottom = "-100%";
+  document.getElementById("chatbox").style.display = "none";
 }
 
 function inputFocus() {

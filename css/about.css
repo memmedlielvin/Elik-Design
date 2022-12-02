@@ -764,9 +764,10 @@
     height: 100vh;
     font-size: 10px;
     position: fixed;
-    right: 0;
-    bottom: -100vh;
+    top: 0;
+    left: 0;
     z-index: 3;
+    display: none;
   }
   #chatbox .chat-box-head {
     width: 100%;

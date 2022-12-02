@@ -764,8 +764,9 @@
     height: 100vh;
     font-size: 10px;
     position: fixed;
-    right: 0;
-    bottom: -100vh;
+    top: 0;
+    left: 0;
+    display: none;
     z-index: 3;
   }
   #chatbox .chat-box-head {
