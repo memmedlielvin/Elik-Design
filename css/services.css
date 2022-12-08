@@ -934,8 +934,8 @@
   #chatbox .chat-box-footer .send-message-icon {
     display: none;
     position: absolute;
-    height: 100%;
-    top: 0;
+    height: 50%;
+    top: 25%;
     right: 0;
     opacity: 0.8;
     cursor: pointer;
