@@ -15,6 +15,7 @@ function closenav() {
 function openchat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
   document.getElementById("chatbox").style.bottom = "0";
+  document.getElementById("chatbox").style.top = "20px";
   document.getElementById("main").style.display = "none";
   document.getElementById("body").style.overflow = "hidden";
 }
