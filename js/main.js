@@ -15,17 +15,15 @@ function closenav() {
 function openchat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
   document.getElementById("chatbox").style.bottom = "0";
-  document.getElementById("chatbox").style.top = "20px";
+
   document.getElementById("main").style.display = "none";
-  document.getElementById("body").style.overflow = "hidden";
 }
 
 function closechat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
   document.getElementById("chatbox").style.bottom = "-100vh";
-  document.getElementById("chatbox").style.top = "100vh";
+
   document.getElementById("main").style.display = "block";
-  document.getElementById("body").style.overflow = "visible";
 }
 
 function inputFocus() {
