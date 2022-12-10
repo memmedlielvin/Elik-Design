@@ -788,10 +788,7 @@
   }
   #chatbox .chat-box-head {
     width: 100%;
-    height: 14vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 14%;
     background-color: #242424;
     display: flex;
     justify-content: space-between;
@@ -839,10 +836,7 @@
   }
   #chatbox .chat-box-body {
     max-width: 100%;
-    height: 78vh;
-    position: fixed;
-    top: 14vh;
-    left: 0;
+    height: 78%;
     overflow: auto;
     word-wrap: break-word;
     background-color: #e9e9e9;
@@ -864,10 +858,7 @@
   }
   #chatbox .chat-box-footer {
     width: 100%;
-    height: 8vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    height: 8%;
     position: relative;
     display: flex;
     justify-content: center;

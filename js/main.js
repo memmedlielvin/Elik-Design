@@ -20,6 +20,8 @@ function openchat() {
 function closechat() {
   document.getElementById("chatbox").style.transition = "all 0.5s ease";
   document.getElementById("chatbox").style.bottom = "-100vh";
+
+  document.getElementById("main").style.display = "block";
 }
 
 function inputFocus() {
