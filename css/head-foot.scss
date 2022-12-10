@@ -891,7 +891,10 @@
 
     .chat-box-head {
       width: 100%;
-      height: 14%;
+      height: 14vh;
+      position: fixed;
+      top: 0;
+      left: 0;
       background-color: #242424;
       display: flex;
       justify-content: space-between;
@@ -947,7 +950,10 @@
 
     .chat-box-body {
       max-width: 100%;
-      height: 78%;
+      height: 78vh;
+      position: fixed;
+      top: 14vh;
+      left: 0;
       overflow: auto;
       word-wrap: break-word;
 
@@ -973,7 +979,10 @@
 
     .chat-box-footer {
       width: 100%;
-      height: 8%;
+      height: 8vh;
+      position: fixed;
+      top: 92vh;
+      left: 0;
       position: relative;
       display: flex;
       justify-content: center;

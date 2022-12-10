@@ -48,9 +48,7 @@ function inputBlur() {
 
 function sendmessage() {
   mesaginput = document.querySelector("#text-input").value;
-  x = document.querySelector(".chat-box-body-inner").innerHTML = mesaginput;
 
-  document.querySelector(".chat-box-body-inner").innerHTML = mesaginput;
+  document.querySelector(".chat-box-body-inner").innerHTML += mesaginput;
   document.querySelector(".chat-box-body-inner").style.backgroundColor = "grey";
-  mesaginput == " ";
 }
