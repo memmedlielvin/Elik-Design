@@ -157,14 +157,20 @@
                 
         </div >
         
-        <div class="chat-box-body"></div>
+        <div class="chat-box-body">
+
+            <div class="chat-box-body-inner"></div>
+
+
+
+        </div>
         
         
         
         <div class="chat-box-footer">
             <div id="smile-text-input">
                 <i class="fa-regular fa-face-smile"></i>
-                <input type="text"  id= "text-input" placeholder="Type your mesage" onfocus="inputFocus();" >
+                <input type="text"  id= "text-input" placeholder="Type your mesage" onfocus="inputFocus();" onblur="inputBlur();">
             </div>
             <div id="scripka-camera-input">
                 
@@ -176,7 +182,7 @@
                
             </div>
 
-            <img class="send-message-icon" src="icon/send-message-icon.png" alt="send-message-icon" onClick="sendmessage(); ">
+            <div ><img  class="send-message-icon" src="icon/send-message-icon.png" alt="send-message-icon" onClick="sendmessage(); "></div>
         </div>
         
     
