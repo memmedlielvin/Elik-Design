@@ -36,12 +36,12 @@ function inputBlur() {
 
   document.querySelector("#file-camera-img ").style.display = "block";
   document.querySelector("#file-scripka-img ").style.display = "block";
+  document.querySelector(".chat-box-body-inner").style.backgroundColor =
+    "#e9e9e9";
 
   mesaginput = document.querySelector("#text-input").value;
   document.querySelector(".chat-box-body-inner").innerHTML = mesaginput;
   document.querySelector(".chat-box-body-inner").style.backgroundColor = "grey";
-
-  mesaginput == " ";
 }
 
 function sendmessage() {
