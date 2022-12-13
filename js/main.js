@@ -41,7 +41,6 @@ function inputBlur() {
 
   mesaginput = document.querySelector("#text-input").value;
   document.querySelector(".chat-box-body-inner").innerHTML = mesaginput;
-  document.querySelector(".chat-box-body-inner").style.backgroundColor = "grey";
 }
 
 function sendmessage() {
